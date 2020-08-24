@@ -1,13 +1,17 @@
 <template>
-  <div id="app">
-    <v-card></v-card>
+  <div id="app" style="padding:0; margin:0;">
+    <b-navbar toggleable="lg" type="light" variant="info">
+      <b-navbar-brand>
+        <portrait src="assets/logo.svg" size="50px" class="logo" />
+      </b-navbar-brand>
+    </b-navbar>
+    <front-page />
   </div>
 </template>
 
 <script>
 export default {
   name: "App",
-  components: {},
   mounted() {},
 };
 </script>
@@ -20,5 +24,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.logo {
+  display: inline;
 }
 </style>
