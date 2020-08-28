@@ -9,7 +9,7 @@ export default {
   props: ["src", "size"],
   computed: {
     widthStyles() {
-      return "width: " + this.size;
+      return "max-width: " + this.size;
     },
   },
 };
@@ -21,7 +21,7 @@ export default {
 }
 .portrait {
   transition: transform 0.1s;
-  width: 100%;
+  max-width: 100%;
   border-radius: 100%;
   margin: 0;
   padding: 0;
