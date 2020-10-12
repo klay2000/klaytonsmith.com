@@ -1,17 +1,18 @@
 <template>
-  <v-card outlined max-width="345">
-    <v-img :src="this.project.image" height="200"></v-img>
+  <v-card outlined max-width="min-content">
+    <v-img :src="this.project.image" height="200" width="345"></v-img>
     <v-card-title>{{ project.title }}</v-card-title>
     <v-card-subtitle v-if="!expanded">{{
       project.description
     }}</v-card-subtitle>
-    <v-card-text v-if="expanded">
-      <v-tabs>
-        <v-tab>Item One</v-tab>
-        <v-tab>Item Two</v-tab>
-        <v-tab>Item Three</v-tab>
-      </v-tabs>
-    </v-card-text>
+
+    <v-tabs centered grow v-if="expanded">
+      <v-tab v-for="i in project.tabs" :key="i">{{ i }}</v-tab>
+      <v-tab-item v-for="i in tabs" :key="i"
+        ><vue-simple-markdown class="md-body" :source="i" />
+      </v-tab-item>
+    </v-tabs>
+
     <v-card-actions>
       <v-btn @click="toggleExpansion()" text style="outline: none">{{
         expanded ? "Less" : "Show More"
@@ -21,10 +22,12 @@
 </template>
 
 <script>
+import Axios from "axios";
 export default {
   data() {
     return {
       expanded: false,
+      tabs: [],
     };
   },
   props: {
@@ -34,6 +37,15 @@ export default {
     toggleExpansion() {
       this.expanded = !this.expanded;
     },
+  },
+  mounted() {
+    for (var i of this.project.tabs) {
+      Axios.get(
+        this.project.path + i.replace(/\s+/g, "-").toLowerCase() + ".md"
+      ).then((response) => {
+        this.tabs.push(response.data);
+      });
+    }
   },
 };
 </script>

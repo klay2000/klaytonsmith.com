@@ -5,8 +5,6 @@
         <portrait src="assets/logo.svg" size="1.5vw" class="logo" />
       </b-navbar-brand>
       <b-navbar-nav>
-        <b-nav-item>Home</b-nav-item>
-        <b-nav-item>Portfolio</b-nav-item>
         <b-nav-item>Contact Me</b-nav-item>
       </b-navbar-nav>
     </b-navbar>
