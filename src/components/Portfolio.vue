@@ -32,6 +32,10 @@ export default {
 <style scoped>
 .container {
   max-width: 75%;
+  display: flex;
+  direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .card {
   padding: 15px;

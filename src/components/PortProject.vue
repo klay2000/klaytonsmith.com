@@ -8,8 +8,8 @@
 
     <v-tabs centered grow v-if="expanded">
       <v-tab v-for="i in project.tabs" :key="i">{{ i }}</v-tab>
-      <v-tab-item v-for="i in tabs" :key="i"
-        ><vue-simple-markdown class="md-body" :source="i" />
+      <v-tab-item v-for="i in tabs" :key="i">
+        <markdown-renderer class="md-body" :value="i"></markdown-renderer>
       </v-tab-item>
     </v-tabs>
 
@@ -51,14 +51,13 @@ export default {
 </script>
 
 <style scoped>
-.md-box {
-  overflow-y: scroll;
-  overflow-x: hidden;
-  margin-left: 10px;
-  margin-right: 10px;
-  max-height: 250px;
+.md-body {
+  white-space: pre-wrap;
+  overflow: scroll;
+  max-height: 300px;
+  padding: 5px;
 }
-.md-box::-webkit-scrollbar {
+.md-body::-webkit-scrollbar {
   display: none;
 }
 </style>
