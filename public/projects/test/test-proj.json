@@ -1,0 +1,10 @@
+{
+  "title": "test p",
+  "description": "test f",
+  "image": "http://via.placeholder.com/345x200",
+  "tabs": [
+    "test 1",
+    "test 2",
+    "test 3"
+  ]
+}
