@@ -8,6 +8,22 @@
         spend my free time making things, sometimes software related, sometimes
         hardware related, often times both!
       </p>
+
+      <div data-app>
+        <v-dialog v-model="dialog" width="500">
+          <template v-slot:activator="{ on, attrs }">
+            <v-btn v-bind="attrs" v-on="on"> Contact Me </v-btn>
+          </template>
+
+          <v-card>
+            <v-card-title>Contact Me</v-card-title>
+            <v-card-text
+              >You can email me at...
+              <h3>motoklay@gmail.com</h3></v-card-text
+            >
+          </v-card>
+        </v-dialog>
+      </div>
     </v-card>
   </div>
 </template>
