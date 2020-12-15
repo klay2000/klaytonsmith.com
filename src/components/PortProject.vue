@@ -56,6 +56,7 @@ export default {
   overflow: scroll;
   max-height: 300px;
   padding: 5px;
+  text-align: left;
 }
 .md-body::-webkit-scrollbar {
   display: none;

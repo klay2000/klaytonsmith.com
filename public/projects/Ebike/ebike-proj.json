@@ -1,0 +1,10 @@
+{
+  "title": "Custom E-bike",
+  "description": "A totally custom electric bike.",
+  "image": "assets/ebike.jpg",
+  "tabs": [
+    "Specs",
+    "Software",
+    "Hardware"
+  ]
+}

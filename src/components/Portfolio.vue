@@ -31,6 +31,7 @@ export default {
 
 <style scoped>
 .container {
+  margin-top: 10px;
   max-width: 75%;
   display: flex;
   direction: row;

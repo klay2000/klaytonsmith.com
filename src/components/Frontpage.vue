@@ -38,6 +38,7 @@ export default {};
 }
 .container {
   max-width: 50%;
+  margin-top: 10px;
 }
 .card {
   padding: 15px;
