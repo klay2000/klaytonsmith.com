@@ -39,8 +39,6 @@ export default {
     },
   },
   mounted() {
-    console.log(this.project.path)
-
     for (var i of this.project.tabs) {
       Axios.get(
         this.project.path + i.replace(/\s+/g, "-").toLowerCase() + ".md"
