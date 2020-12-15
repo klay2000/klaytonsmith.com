@@ -1,0 +1,1 @@
+One of my hobbies is flying my freestyle FPV drone (in fact at the time of writing this I'm president of the drone club at my university). I haven't flown it in a while due to COVID-19 but I have some old videos of it on my Youtube channel [here](https://www.youtube.com/user/motoklay/videos) .
