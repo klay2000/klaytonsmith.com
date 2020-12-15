@@ -1,5 +1,5 @@
 <template>
-  <v-card outlined max-width="min-content">
+  <v-card outlined max-width="min-content" style="margin-top: 10px">
     <v-img :src="this.project.image" height="200" width="345"></v-img>
     <v-card-title>{{ project.title }}</v-card-title>
     <v-card-subtitle v-if="!expanded">{{
@@ -39,6 +39,8 @@ export default {
     },
   },
   mounted() {
+    console.log(this.project.path)
+
     for (var i of this.project.tabs) {
       Axios.get(
         this.project.path + i.replace(/\s+/g, "-").toLowerCase() + ".md"

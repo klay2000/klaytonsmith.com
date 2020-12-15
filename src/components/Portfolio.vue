@@ -16,7 +16,7 @@ export default {
   },
   mounted() {
     axios.get("projects/project-index.json").then((Response) => {
-      for (var i of Response.data) {
+      for (let i of Response.data) {
         axios.get("projects/" + i).then((response) => {
           response.data.path =
             "projects/" + i.substr(0, i.lastIndexOf("/") + 1);
@@ -34,7 +34,6 @@ export default {
   margin-top: 10px;
   max-width: 75%;
   display: flex;
-  direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
 }
