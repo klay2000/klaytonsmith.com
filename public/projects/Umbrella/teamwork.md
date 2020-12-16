@@ -1,0 +1,3 @@
+On this project we used Scrum to keep the team focused and organized. As the team leader I really enjoyed using Scrum and I liked how it kept the members fairly independent. 
+This was my first project where I was working with people who had significantly less experience than me, and at times I and the other experienced member of our team had trouble with the others being in over their head and not asking for help. This was definitely helped by having weekly standups where everyone went over what they'd worked on over the week and what they were going to do the next.
+My experience working as a tutor really helped when the other members needed help, and the other experienced member and I probably were on a call with someone from the team every other day.

@@ -1,0 +1,10 @@
+{
+  "title": "Umbrella",
+  "description": "A reddit-like social media site.",
+  "image": "assets/umbrella.png",
+  "tabs": [
+    "Project",
+    "Build",
+    "Teamwork"
+  ]
+}
