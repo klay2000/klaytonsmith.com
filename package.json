@@ -12,7 +12,7 @@
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
     "vue-markdown-renderer": "^0.2.7",
-    "vuetify": "^2.2.11"
+    "vuetify": "^2.6.10"
   },
   "devDependencies": {
     "@babel/polyfill": "^7.11.5",
