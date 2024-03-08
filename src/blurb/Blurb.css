@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+.blurb {
+  grid-area: blurb;
+}
+
+.blurbText {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  /* text-wrap: nowrap; */
+}
+.blurbText:hover {
+  transform: scale(1.01);
+  transition: transform 0.2s;
+}
+.blurbText:not(hover) {
+  transform: scale(1);
+  transition: transform 0.2s;
+}
+
+.greeting {
+  font-size: calc(2vw + 2vh);;
+  text-align: center;
+}
+
+.nameIntro {
+  text-align: left;
+  font-size: calc(1vw + 1vh);;
+}
+
+.name {
+  text-align: left;
+  font-size: calc(3vw + 3vh);;
+}
+
+.makeStuff {
+  text-align: right;
+  font-size: calc(1.5vw + 1.5vh);;
+}

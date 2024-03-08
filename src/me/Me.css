@@ -1,0 +1,19 @@
+.meOuter{
+  grid-area: pic;
+  place-self: center;
+}
+.me{
+  border-radius: 15%;
+  aspect-ratio: auto;
+  width: 100%;
+  height: auto;
+  grid-area: pic;
+}
+.me:hover{
+  transform: scale(1.01);
+  transition: transform 0.2s;
+}
+.me:not(hover){
+  transform: scale(1);
+  transition: transform 0.2s;
+}

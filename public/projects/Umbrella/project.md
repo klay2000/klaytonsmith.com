@@ -1,2 +1,0 @@
-Umbrella was a group project I did for school in summer 2020. We came up with the name Umbrella after someone jokingly said "we should name it umbrella like the company from resident evil", after we thought about it a little more though, we decided it was actually a pretty good name.
-Umbrella was structured into drops, posts, and comments. Drops were places where you could make posts around a certain topic, and these posts could be commented on.

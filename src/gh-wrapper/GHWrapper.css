@@ -1,0 +1,40 @@
+.GHWrapper {
+  grid-area: gh;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+.GHImg{
+  aspect-ratio: 1/1;
+  height: auto;
+}
+.GHLink{
+  aspect-ratio: 1/1;
+  width: 100%;
+}
+
+.GHLogo{
+  animation: GHLogoPulse infinite 3s linear;
+}
+@keyframes GHLogoPulse {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  to{
+    transform: scale(1);
+  }
+}
+
+.GHLogo:hover{
+  transform: scale(1.05);
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+.GHLogo:not(hover){
+  transform: scale(1);
+  transition: transform 0.2s;
+}

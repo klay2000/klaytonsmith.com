@@ -1,0 +1,49 @@
+#root{
+  display: grid;
+  columns: 1fr;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  align-content: center;
+  
+  background: linear-gradient(-45deg, #f56e30, #bb56d4, #37b2df, #a9ce55);
+	background-size: 350% 350%;
+	animation: gradient 45s linear infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 0%;
+	}
+	20% {
+		background-position: 0% 100%;
+	}
+  40% {
+		background-position: 100% 100%;
+	}
+	60% {
+		background-position: 0% 100%;
+	}
+  80% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.app{
+  display: grid;
+  margin: auto;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas:  "pic blurb"
+                        "pic gh";
+  height: 65vh;
+  width: 75vw;
+  align-items: center;
+  justify-items: right;
+  place-content: center;
+}

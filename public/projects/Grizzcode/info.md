@@ -1,1 +1,0 @@
-Grizzcode is a programming challenge web-app similar to leetcode I wrote during my internship with my the OU Tutoring Center in the summer of 2020. Grizzcode is written in Vue and is designed to allow new challenges and languages to be easily added.

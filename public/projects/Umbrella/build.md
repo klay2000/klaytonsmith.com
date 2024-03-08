@@ -1,1 +1,0 @@
-One particular thing I was really proud of with Umbrella was the build system we set up. We wrote the frontend in Vue, and the backend in Java, in order to compile these and package them together into a jar file easily we set up a Docker image that built the whole thing using Gradle. After we built the project, the backend was run on an AWS EC2 instance.
